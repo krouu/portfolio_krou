@@ -87,8 +87,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         title : 'CMS 사이트 소셜로그인 기능 개발',
-        date : '2025.05 - 2025.06',
-        content : '사이트 소셜로그인 기능 개발(1人 프로젝트)',
+        date : '2025.05 - 2025.06(1人 프로젝트)',
+        content : '사이트 소셜로그인 기능 개발',
         content_list : [
             '소셜로그인 기능(Naver, Kakao, Google) 개발로 사용자 편의성 향상',
             'OPEN API를 통한 외부 서비스 연동 기능 개발',

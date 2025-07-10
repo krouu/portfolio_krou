@@ -28,8 +28,33 @@ li {
 }
 
 input[type='radio'] {
-    width: clamp(9px, 3vw, 18px);
-    height: clamp(9px, 3vw, 18px);
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 4px;
+    font-weight: 600;
+}
+
+input[type="radio"] + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; 
+    background: #ffc400;
+    transition: width 0.5s ease; 
+}
+
+input[type="radio"]:checked + label {
+    color: #ffc400;
+}
+
+input[type="radio"]:checked + label::after {
+    width: 100%;
 }
 
 .section-content {
@@ -349,7 +374,7 @@ input[type='radio'] {
 .study-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(5px, 2vw, 10px);
     padding: clamp(5px, 2vw, 20px);
     border: 1px solid #d7d7d7;
     border-radius: clamp(5px, 1vw, 10px);
@@ -422,15 +447,19 @@ input[type='radio'] {
 }
 
 .project-group {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 2vw, 20px);
     padding: 0px;
+    margin: clamp(5px, 2vw, 10px) 0;
 }
 
 .project-group .list-group {
     width: 100%;
 }
 
-.project-group .list-group .list-head {
-    width: 100%;
+.list-group .list-head {
+    width: auto;
     display: flex;
     gap: clamp(10px, 2vw, 20px);
     align-items: center;
@@ -438,18 +467,19 @@ input[type='radio'] {
     padding: clamp(10px, 3vw, 30px);
     border-radius: clamp(5px, 1vw, 10px);
     position: relative;
+    cursor: pointer;
 }
 
-.project-group .list-group .list-head h3 {
+.list-group .list-head h3 {
     font-size: clamp(8px, 3vw, 20px);
     margin: 0;
 }
 
-.project-group .list-group .list-head span {
+.list-group .list-head span {
     font-size: clamp(8px, 3vw, 18px);
 }
 
-.project-group .list-group .list-head::after{
+.list-group .list-head::after{
     content: '▼';
     position: absolute;
     right: clamp(10px, 3vw, 30px);
@@ -457,16 +487,31 @@ input[type='radio'] {
     color: #d7d7d7;
 }
 
-.project-group .list-group .list-body {
-    width: 100%;
+.list-group .list-body {
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: clamp(5px, 2vw, 20px);
-    padding: clamp(10px, 3vw, 30px);
+    padding: 0;
     background-color: #EEFCFF;
     border-end-end-radius: clamp(5px, 1vw, 10px);
     border-end-start-radius: clamp(5px, 1vw, 10px);
-    font-size: clamp(8px, 3vw, 18px);;
+    font-size: clamp(8px, 2vw, 18px);
+    
+    /* 애니메이션을 걸 속성 지정 */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+    max-height 0.5s ease,
+    opacity    0.2s ease,
+    padding    0.5s ease;
+}
+
+.list-group .list-body.active {
+    padding: clamp(10px, 3vw, 30px);
+    max-height: 1000px; /* 리스트가 가질 수 있는 최대 높이보다 크게 설정 */
+    opacity: 1;
 }
 
 .list-body .skill-list {
@@ -476,16 +521,16 @@ input[type='radio'] {
     background-color: #fff;
     border-radius: clamp(5px, 1vw, 10px);
     font-weight: 600;
-    font-size: clamp(8px, 3vw, 18px);
+    font-size: clamp(8px, 2vw, 18px);
 }
 
 .list-body .icons svg {
     width: auto;
-    height: clamp(15px, 2vw, 24px);
+    height: clamp(15px, 2vw, 30px);
 }
 
 .list-body .icons i {
-    font-size: clamp(15px, 2vw, 24px);
+    font-size: clamp(15px, 2vw, 30px);
 }
 
 /* CERTIFICATIONS CONTENT */

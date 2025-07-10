@@ -275,11 +275,11 @@ body{
 }
 
 .company-info .badge div {
-    padding: 7px 10px;
+    padding: clamp(5px, 1vw, 10px) clamp(7px, 2vw, 20px);
     background-color: #000;
     color: #fff;
     width: fit-content;
-    border-radius: 10px;
+    border-radius: clamp(5px, 1vw, 10px);
     font-size: clamp(10px, 2vw, 22px);
     font-family: 'DungGeunMo';
 }
@@ -302,10 +302,52 @@ body{
     width: calc(100% - clamp(10px, 3vw, 40px));
     padding: clamp(10px, 2vw, 25px);
     background-color: #EEFCFF;
-    border-radius: 10px;
+    border-radius: clamp(5px, 1vw, 10px);
     color: #505050;
     font-size: clamp(8px, 2vw, 18px);
     font-weight: 600;
+}
+
+.study-head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.study-head h4 {
+    font-size: clamp(12px, 2vw, 26px);
+    margin: 0;
+}
+
+.study-head span {
+    color: #7A7A7A;
+    font-size: clamp(8px, 2vw, 18px);
+}
+
+.study-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.study-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px #a8a8a8
+}
+
+.study-list h6 {
+    margin: 0;
+    font-size: clamp(8px, 2vw, 18px);
+}
+
+.study-list span{
+    font-size: clamp(8px, 2vw, 18px);
 }
 
 /* SKILL CONTENT */
@@ -345,9 +387,9 @@ body{
 }
 
 .skill-group .list-body div {
-    padding: clamp(5px, 2vw, 10px) clamp(7px, 2vw, 20px);
+    padding: clamp(5px, 1vw, 10px) clamp(7px, 2vw, 20px);
     border: 1px solid #d7d7d7;
-    border-radius: clamp(5px, 2vw, 10px);
+    border-radius: clamp(5px, 1vw, 10px);
     background-color: #fff;
 }
 
@@ -477,10 +519,10 @@ body{
         border-end-start-radius: 0px
     }
     .career-group {
-        width: 100%;
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+    }
+    .study-body{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

@@ -253,7 +253,7 @@ input[type="radio"]:checked + label::after {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: clamp(10px, 3vw, 40px);
+    padding: clamp(15px, 3vw, 40px);
     border: 1px solid #d7d7d7;
     border-radius: clamp(5px, 1vw, 10px);
     box-shadow: 2px 2px 4px 1px #a8a8a8;
@@ -338,7 +338,7 @@ input[type="radio"]:checked + label::after {
 
 
 .company-skill {
-    width: calc(100% - clamp(10px, 3vw, 40px));
+    width: calc(100% - clamp(20px, 3vw, 45px));
     padding: clamp(10px, 2vw, 25px);
     background-color: #EEFCFF;
     border-radius: clamp(5px, 1vw, 10px);

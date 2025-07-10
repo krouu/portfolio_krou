@@ -86,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       },
       {
-        title : 'CMS 사이트 소셜로그인 기능 개발(1人 프로젝트)',
+        title : 'CMS 사이트 소셜로그인 기능 개발',
         date : '2025.05 - 2025.06',
-        content : '사이트 소셜로그인 기능 개발',
+        content : '사이트 소셜로그인 기능 개발(1人 프로젝트)',
         content_list : [
             '소셜로그인 기능(Naver, Kakao, Google) 개발로 사용자 편의성 향상',
             'OPEN API를 통한 외부 서비스 연동 기능 개발',
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         title : '개인 포트폴리오',
-        date : '2025.07.10',
+        date : '2025.07.10 - 2025.07.11',
         content : '개인 포트폴리오',
         content_list : [
             '나만의 포트폴리오 웹사이트 개발',

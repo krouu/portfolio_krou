@@ -443,7 +443,7 @@ input[type="radio"]:checked + label::after {
     display: flex;
     gap: 5px;
     align-items: center;
-    font-size: clamp(8px, 3vw, 18px)
+    font-size: clamp(10px, 3vw, 18px)
 }
 
 .project-group {
@@ -471,12 +471,12 @@ input[type="radio"]:checked + label::after {
 }
 
 .list-group .list-head h3 {
-    font-size: clamp(8px, 3vw, 20px);
+    font-size: clamp(10px, 3vw, 20px);
     margin: 0;
 }
 
 .list-group .list-head span {
-    font-size: clamp(8px, 3vw, 18px);
+    font-size: clamp(10px, 3vw, 18px);
 }
 
 .list-group .list-head::after{
@@ -496,7 +496,7 @@ input[type="radio"]:checked + label::after {
     background-color: #EEFCFF;
     border-end-end-radius: clamp(5px, 1vw, 10px);
     border-end-start-radius: clamp(5px, 1vw, 10px);
-    font-size: clamp(8px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
     
     max-height: 0;
     opacity: 0;
@@ -520,7 +520,7 @@ input[type="radio"]:checked + label::after {
     background-color: #fff;
     border-radius: clamp(5px, 1vw, 10px);
     font-weight: 600;
-    font-size: clamp(8px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
 }
 
 .list-body .icons svg {

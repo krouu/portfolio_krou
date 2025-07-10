@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="portfolio.js"></script>
+</head>
+<body>
+    <!-- 상단 menu -->
+    <nav class="menu-content">
+        <ul>
+            <li data-target="about">ABOUT</li>
+            <li data-target="experience">EXPERIENCE</li>
+            <li data-target="skill">SKILL</li>
+            <li data-target="project">PROJECT</li>
+            <li data-target="certifications">CERTIFICATIONS</li>
+        </ul>
+    </nav>
+
+    <!-- 포트폴리오 내용 -->
+    <section class="portfolio-container">
+        <section class="main-content">
+            <div class="background-image">
+                <img src="/img/mainBack.gif" alt="메인 배경 사진">
+            </div>
+            <div class="main-info">
+                <div class="logo">
+                    <img src="/img//mainLogo.png" alt="메인 로고">
+                </div>
+                <div class="title">PORTFOLIO</div>
+            </div>
+        </section>
+        <!-- about me -->
+        <section class="section-content" id="about">
+            <div class="section-title-wrap">
+                <i class="material-symbols-outlined link">link</i>
+                <span>ABOUT</span>
+            </div>
+            <div class="section-wrap about">
+                <div class="profile-wrap">
+                    <div class="profile-image1">
+                        <img src="/img/profile1.jpg" alt="프로필사진1">
+                    </div>
+                    <div class="profile-image2">
+                        <img src="/img/profile2.jpg" alt="프로필사진2">
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <div class="info-group">
+                        <i class="material-symbols-outlined">person</i>
+                        <div>
+                            <h3>이름</h3>
+                            <span>허주은</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- experience -->
+        <section class="section-content" id="experience">
+            <div class="section-title-wrap">
+                <i class="material-symbols-outlined link">link</i>
+                <span>EXPERIENCE</span>
+            </div>
+        </section>
+        <!-- skill -->
+        <section class="section-content" id="skill">
+            <div class="section-title-wrap">
+                <i class="material-symbols-outlined link">link</i>
+                <span>SKILL</span>
+            </div>
+            <div class="section-wrap" style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="skill-group">
+                    <div class="list-head">BACKEND</div>
+                    <div class="list-body">
+                        <div>PHP</div>
+                        <div>JAVA</div>
+                        <div>Codeigniter Framework</div>
+                        <div>Spring boot</div>
+                        <div>api</div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <div class="list-head">FRONTEND</div>
+                    <div class="list-body">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>JavaScript</div>
+                        <div>TypeScript</div>
+                        <div>React</div>
+                        <div>Next.js</div>
+                        <div>Ajax</div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <div class="list-head">DB</div>
+                    <div class="list-body">
+                        <div>MySQL</div>
+                        <div>Oracle</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project -->
+        <section class="section-content" id="project">
+            <div class="section-title-wrap">
+                <i class="material-symbols-outlined link">link</i>
+                <span>PROJECT</span>
+            </div>
+            <div class="section-wrap">
+                <div class="checkbox-group">
+                    <div>
+                        <input type="radio" name="project" id="project-all">
+                        <label for="project-all">전체</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="project" id="project-best" checked>
+                        <label for="project-best">중요 프로젝트</label>
+                    </div>
+                </div>
+                <ul class="project-group">
+                    <li class="list-group">
+                        <div class="list-head">
+                            <h3>프로젝트명</h3>
+                            <span>2024.07.01 - 2024.07.15(4人 팀 프로젝트)</span>
+                        </div>
+                        <div class="list-body">
+                            <div>
+                                <strong>여행에 필요한 항공</strong>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>1</li>
+                                    <li>1</li>
+                                    <li>1</li>
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                            <div class="skill-list">
+                                <span>java, spring boot</span>
+                            </div>
+                            <div>
+                                <i>1</i>
+                                <i>1</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- cenrtifications -->
+        <section class="section-content" id="certifications">
+            <div class="section-title-wrap">
+                <i class="material-symbols-outlined link">link</i>
+                <span>CERTIFICATIONS</span>
+            </div>
+            <div class="section-wrap">
+                <ul class="certifications-list">
+                    <li class="info-group">
+                        <div>
+                            <img src="/img/leaf.png" alt="">
+                        </div>
+                        <div class="info">
+                            <span>SQLD</span>
+                            <span>2024.04</span>
+                            <span>합격</span>
+                        </div>
+                    </li>
+                    <li class="info-group">
+                        <div>
+                            <img src="/img/leaf.png" alt="">
+                        </div>
+                        <div class="info">
+                            <span>리눅스마스터2급</span>
+                            <span>2024.10</span>
+                            <span>합격</span>
+                        </div>
+                    </li>
+                    <li class="info-group">
+                        <div>
+                            <img src="/img/leaf.png" alt="">
+                        </div>
+                        <div class="info">
+                            <span>네트워크관리자2급</span>
+                            <span>2024.08</span>
+                            <span>1차필기 합격</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="marquee">
+            <div class="marquee-inner">
+                THANK YOU THANK YOU THANK YOU THANK YOU THANK YOU
+            </div>
+        </div>
+    </section>
+</body>
+</html>

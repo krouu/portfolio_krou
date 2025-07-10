@@ -289,7 +289,7 @@ input[type="radio"]:checked + label::after {
 
 .company-info .name {
     display: flex;
-    gap: 20px;
+    gap: clamp(5px, 2vw, 20px);
     align-items: center;
 }
 
@@ -350,7 +350,7 @@ input[type="radio"]:checked + label::after {
 
 .study-head {
     display: flex;
-    gap: 20px;
+    gap: clamp(5px, 2vw, 20px);
     align-items: center;
     margin-bottom: clamp(5px, 2vw, 20px)
 }
@@ -383,11 +383,11 @@ input[type="radio"]:checked + label::after {
 
 .study-list h6 {
     margin: 0;
-    font-size: clamp(8px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
 }
 
 .study-list span{
-    font-size: clamp(8px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
 }
 
 /* SKILL CONTENT */
@@ -498,7 +498,6 @@ input[type="radio"]:checked + label::after {
     border-end-start-radius: clamp(5px, 1vw, 10px);
     font-size: clamp(8px, 2vw, 18px);
     
-    /* 애니메이션을 걸 속성 지정 */
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -510,7 +509,7 @@ input[type="radio"]:checked + label::after {
 
 .list-group .list-body.active {
     padding: clamp(10px, 3vw, 30px);
-    max-height: 1000px; /* 리스트가 가질 수 있는 최대 높이보다 크게 설정 */
+    max-height: 1000px;
     opacity: 1;
 }
 

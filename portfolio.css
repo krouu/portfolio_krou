@@ -305,7 +305,7 @@ body{
 /* CERTIFICATIONS CONTENT */
 .certifications-list{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     font-family: 'DungGeunMo';
 }
 
@@ -329,7 +329,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: clamp(5px, 2vw, 20px);
-    font-size: clamp(10px, 3vw, 36px);
+    font-size: clamp(8px, 3vw, 36px);
     color: #fff;
     overflow: auto;
 }
@@ -346,11 +346,11 @@ body{
 
 .marquee-inner {
   display: inline-block;
-  padding: 100px 0;
+  padding: clamp(30px, 5vw, 100px) 0;
   font-family: 'DungGeunMo';
   font-size: clamp(50px, 6vw, 200px);
-  color: transparent;
-  -webkit-text-stroke: 3px #FFECAD;
+  color: #FFECAD;
+  -webkit-text-stroke: 2px #ffda5f;
   animation: scroll-left 20s linear infinite;
 }
 

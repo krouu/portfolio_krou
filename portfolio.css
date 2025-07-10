@@ -284,7 +284,6 @@ input[type="radio"]:checked + label::after {
 .company-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 .company-info .name {
@@ -304,7 +303,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .company-info .title {
-    font-size: clamp(8px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
     margin-bottom: clamp(5px, 1vw, 15px);
 }
 
@@ -325,7 +324,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .company-info .work span{
-    font-size: clamp(8px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
     font-weight: 600;
 }
 
@@ -334,7 +333,7 @@ input[type="radio"]:checked + label::after {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-size: clamp(6px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
 }
 
 

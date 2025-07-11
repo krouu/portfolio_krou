@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             '최고 관리자 페이지에서 회원, 기업, 상품, 결제 정보를 관리'
         ],
         skill : 'JAVA, Spring boot, Mybatis, Thymelef, Git, MySQL, dbeaver',
-        isBest : true,
+        isBest : false,
         links : [
             { git : 'https://github.com/leeuihyoun/traveler/tree/jueun' },
             { photo: '' },
